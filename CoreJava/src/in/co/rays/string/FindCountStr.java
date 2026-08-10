@@ -4,8 +4,8 @@ public class FindCountStr {
 	
 	public static void main(String []args)
 	{
-		String str = "solve";
-		//int count;
+		String str = "solvee";
+		//int count=0;
 		//char c;
 		
 		for(char c ='a'; c<='z'; c++)

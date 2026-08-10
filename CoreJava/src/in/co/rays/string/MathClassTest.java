@@ -13,6 +13,8 @@ public class MathClassTest {
 		System.out.println("Random Number = "+Math.random());
 		System.out.println("Random number *100 = "+Math.random()*100);
 		System.out.println("square Rood = "+Math.sqrt(25));
+		System.out.println(""+Math.decrementExact(5));
+		System.out.println(""+Math.addExact(5, 4));
 		
 		
 	}
