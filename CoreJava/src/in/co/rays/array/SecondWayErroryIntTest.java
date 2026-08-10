@@ -6,7 +6,7 @@ public class SecondWayErroryIntTest {
 	
 	public static void main(String []args)
 	{
-		int a[] = new int[10];
+		int a[] = new int[6];
 		    a[0]= 2;
 		    a[1]= 4;
 		    a[2]= 6;
