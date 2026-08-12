@@ -2,13 +2,12 @@ package in.co.rays.basics;
 
 public class HelloDoWhileLoop {
 
-	public static void main(String[]args)
-	{
-		int i=1;
-		
+	public static void main(String[] args) {
+		int i = 1;
+
 		do {
-			System.out.println(i+" = Message");
-		}while(i==5);
-			
+			System.out.println(i + " = Message");
+		} while (i == 5);
+
 	}
 }
