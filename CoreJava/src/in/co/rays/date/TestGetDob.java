@@ -13,7 +13,7 @@ public class TestGetDob {
 		System.out.println("Month " + birthDate.getMonth());
 		System.out.println("Week " + birthDate.getDayOfWeek());
 		System.out.println(" " + birthDate.getDayOfYear());
-		System.out.println("Month Value " + birthDate.getMonthValue());
+		System.out.println("Month Value" + birthDate.getMonthValue());
 
 	}
 }
