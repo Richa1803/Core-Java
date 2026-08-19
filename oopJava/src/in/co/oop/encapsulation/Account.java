@@ -7,7 +7,7 @@ public class Account {
 	private double balance;
 
 	public String getNumber() {
-		return number;
+		return this.number;
 	}
 
 	public void setNumber(String number) {
@@ -15,7 +15,7 @@ public class Account {
 	}
 
 	public String getAccountType() {
-		return accountType;
+		return this.accountType;
 	}
 
 	public void setAccountType(String accountType) {
@@ -23,12 +23,43 @@ public class Account {
 	}
 
 	public double getBalance() {
-		return balance;
+		return this.balance;
 
 	}
 
 	public void setBalance(double balance) {
 		this.balance = balance;
+	}
+
+	public void deposit(double amount) {
+		this.balance = this.balance + amount;
+	}
+
+	public void withdrowal(double amount) {
+		if (amount > this.balance) {
+			System.out.println("insufficint fund");
+		} else {
+			this.balance = this.balance - amount;
+		}
+	}
+
+	public void payBill(double bill) {
+		if (bill > this.balance) {
+			System.out.println("insufficint balance");
+		} else {
+			this.balance = this.balance - bill;
+			System.out.println("bill payment successfull");
+		}
+
+	}
+	public void fundTransfer(Account reciver, double amount) {
+		if(amount>this.balance) {
+			System.out.println("insufficint balance");
+		}else {
+			this.balance = this.balance-amount;
+			reciver.balance =reciver.balance+amount;
+			System.out.println("Fund transfer successfully....");
+		}
 	}
 
 }
